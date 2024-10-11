@@ -1,0 +1,6 @@
+CREATE TABLE courses (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100),
+  teacher_id INTEGER REFERENCES teachers(id), 
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
