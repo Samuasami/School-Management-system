@@ -1,11 +1,11 @@
 const express = require("express");
-const cors = require("cors"); // Importing CORS
+const cors = require("cors");
 const app = express();
 const PORT = 4000;
 
 // Middleware
-app.use(cors()); // Enable CORS for all requests
-app.use(express.json()); // For parsing application/json
+app.use(cors());
+app.use(express.json());
 
 // Start the server
 app.listen(PORT, () => {
